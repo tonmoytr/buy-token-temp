@@ -3,173 +3,237 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Robin | Graphic Design Portfolio</title>
+    <title>GUESSIT - Graphic Design Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
       body {
         margin: 0;
-        font-family: "Segoe UI", sans-serif;
-        background-color: #0b0b0b;
-        color: #f5f5f5;
+        background-color: #000;
+        color: #fff;
+        font-family: "Inter", sans-serif;
+        scroll-behavior: smooth;
       }
+
       header,
-      section,
-      footer {
+      footer,
+      section {
         padding: 60px 20px;
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .hero {
         text-align: center;
       }
-      .hero {
-        background: linear-gradient(145deg, #0b0b0b 60%, #00ff88 90%);
-        color: #fff;
-        padding: 100px 20px;
-      }
+
       .hero h1 {
-        font-size: 3rem;
-        margin-bottom: 10px;
+        color: #00ff88;
+        font-size: 2.5em;
       }
-      .hero p {
-        font-size: 1.2rem;
-        max-width: 600px;
-        margin: 0 auto 30px;
-      }
-      .button {
-        background-color: #00ff88;
-        color: #0b0b0b;
-        border: none;
-        padding: 15px 30px;
+
+      .btn {
+        display: inline-block;
         margin: 10px;
-        border-radius: 8px;
-        cursor: pointer;
-        font-weight: bold;
-        text-transform: uppercase;
+        padding: 12px 24px;
+        border-radius: 5px;
+        border: 1px solid #00ff88;
+        background-color: transparent;
+        color: #00ff88;
+        text-decoration: none;
+        transition: background 0.3s, transform 0.3s;
       }
-      .section-title {
-        font-size: 2rem;
-        margin-bottom: 40px;
+
+      .btn:hover {
+        background-color: #00ff88;
+        color: #000;
+        transform: scale(1.05);
       }
+
       .features,
-      .services,
-      .portfolio {
+      .token,
+      .how-to,
+      .roadmap {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 30px;
-        max-width: 1200px;
-        margin: 0 auto;
+        margin-top: 40px;
       }
-      .card {
-        background-color: #1a1a1a;
+
+      .feature-box,
+      .token-box,
+      .step-box {
+        background: #111;
         padding: 20px;
-        border-radius: 10px;
         border: 1px solid #00ff88;
+        border-radius: 10px;
+        transition: transform 0.3s;
       }
-      .timeline {
-        max-width: 800px;
-        margin: 0 auto;
-        border-left: 2px solid #00ff88;
-        padding-left: 20px;
-        text-align: left;
+
+      .feature-box:hover,
+      .token-box:hover,
+      .step-box:hover {
+        transform: translateY(-5px);
       }
-      .timeline-entry {
-        margin-bottom: 30px;
-      }
-      .contact-form input,
-      .contact-form textarea {
-        width: 100%;
-        padding: 15px;
-        margin-bottom: 20px;
-        border: none;
-        border-radius: 8px;
-      }
+
       .footer {
-        background-color: #111;
-        padding: 30px;
-        font-size: 0.9rem;
-        color: #aaa;
+        text-align: center;
+        padding: 40px 20px;
+        border-top: 1px solid #00ff88;
+      }
+
+      .glow {
+        text-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88;
+      }
+
+      .hero img {
+        max-width: 100%;
+        margin: 30px 0;
+        border-radius: 10px;
       }
     </style>
   </head>
+
   <body>
-    <header class="hero">
-      <h1>Design the Future. Create the Impact.</h1>
-      <p>
-        Welcome to Robin's graphic design portfolio. From digital branding to
-        futuristic visuals — explore the works that break boundaries.
-      </p>
-      <button class="button">View Work</button>
-      <button class="button">Hire Me</button>
+    <header>
+      <div class="logo glow">GUESSIT</div>
+      <div>
+        <a href="#" class="btn">Launch App</a>
+        <a href="#" class="btn">Buy Token</a>
+      </div>
     </header>
 
-    <section>
-      <h2 class="section-title">Who is Robin?</h2>
+    <section class="hero">
+      <h1 class="glow">Crack the Code. Claim the Prize.</h1>
       <p>
-        Robin is a passionate graphic designer with over 1 year of experience in
-        branding, web UI/UX, and crypto-based visuals. Worked with international
-        clients and built design identities that stand out in digital spaces.
+        The ultimate guessing game built on skill and community. Outplay the AI
+        agent and win big.
       </p>
-      <button class="button">Download CV</button>
+      <img src="assets/mockup-hero.png" alt="Game Preview" />
+      <a href="#" class="btn">Join Telegram</a>
+      <a href="#" class="btn">Launch App</a>
     </section>
 
     <section>
-      <h2 class="section-title">Expertise & Tools</h2>
-      <div class="features">
-        <div class="card">Crypto Branding</div>
-        <div class="card">UI/UX Design</div>
-        <div class="card">Creative Direction</div>
-        <div class="card">Logo & Identity</div>
-        <div class="card">Motion Graphics</div>
-        <div class="card">Speed & Quality</div>
+      <h2>What is GUESSIT?</h2>
+      <p>
+        GUESSIT is a community-driven game where players guess numerical codes
+        to win rewards. The AI agent secures the code and players test their
+        strategy to crack it. Guess right, win the prize pool, and claim
+        victory.
+      </p>
+      <a href="#" class="btn">Read Whitepaper</a>
+    </section>
+
+    <section class="features">
+      <div class="feature-box">
+        <h3>Affordable Fun</h3>
+        <p>Start guessing for only $1 credit.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Growing Prize Pool</h3>
+        <p>Every wrong guess increases the prize pool.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Transparency</h3>
+        <p>Play with confidence on a fair platform.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Gamification</h3>
+        <p>Level-based system and engaging formats.</p>
+      </div>
+      <div class="feature-box">
+        <h3>AI Agent</h3>
+        <p>Challenge the AI and crack its code.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Maximum Security</h3>
+        <p>Smart contract and zero backend access risk.</p>
       </div>
     </section>
 
     <section>
-      <h2 class="section-title">My Work</h2>
-      <div class="portfolio">
-        <div class="card">Project 1</div>
-        <div class="card">Project 2</div>
-        <div class="card">Project 3</div>
-        <div class="card">Project 4</div>
+      <h2>Marketing & Community Engagement</h2>
+      <ul>
+        <li>Live Streams</li>
+        <li>Instant Content</li>
+        <li>Referral Contests</li>
+        <li>Collabs & Partnerships</li>
+      </ul>
+    </section>
+
+    <section class="token">
+      <div class="token-box">
+        <h3>Brand Awareness</h3>
+        <p>Engage through creative campaigns.</p>
+      </div>
+      <div class="token-box">
+        <h3>Partnerships</h3>
+        <p>Strategic benefits and co-marketing.</p>
+      </div>
+      <div class="token-box">
+        <h3>Community Incentives</h3>
+        <p>Token-based rewards and voting.</p>
+      </div>
+      <div class="token-box">
+        <h3>Ownership</h3>
+        <p>Token holders shape the platform.</p>
       </div>
     </section>
 
-    <section>
-      <h2 class="section-title">What I Offer</h2>
-      <div class="services">
-        <div class="card">
-          Starter Pack<br /><small>Logo + Business Card</small>
-        </div>
-        <div class="card">
-          Pro Branding<br /><small>Full Identity Package</small>
-        </div>
-        <div class="card">
-          Custom UI Kit<br /><small>Web or App Design</small>
-        </div>
+    <section class="how-to">
+      <div class="step-box">
+        <h3>Connect Wallet</h3>
+        <p>Start by linking your wallet.</p>
+      </div>
+      <div class="step-box">
+        <h3>Buy Credits</h3>
+        <p>Use $GUESS tokens to play.</p>
+      </div>
+      <div class="step-box">
+        <h3>Make Your Guess</h3>
+        <p>Choose your number wisely.</p>
+      </div>
+      <div class="step-box">
+        <h3>Win Big</h3>
+        <p>Crack the code and win rewards.</p>
       </div>
     </section>
 
-    <section>
-      <h2 class="section-title">Creative Journey</h2>
-      <div class="timeline">
-        <div class="timeline-entry">Jan 2023 – First freelance client</div>
-        <div class="timeline-entry">Jun 2023 – Full-time at design agency</div>
-        <div class="timeline-entry">Dec 2023 – Started crypto branding</div>
-        <div class="timeline-entry">Feb 2024 – Built own design system</div>
-        <div class="timeline-entry">Apr 2025 – Portfolio launch</div>
+    <section class="roadmap">
+      <div>
+        <h3>January 2025</h3>
+        <p>Concept, branding, and landing page.</p>
       </div>
-    </section>
-
-    <section>
-      <h2 class="section-title">Let’s Work Together</h2>
-      <form class="contact-form">
-        <input type="text" placeholder="Name" required />
-        <input type="email" placeholder="Email" required />
-        <textarea rows="5" placeholder="Your message..."></textarea>
-        <button class="button">Send Message</button>
-      </form>
+      <div>
+        <h3>February 2025</h3>
+        <p>Smart contracts, test spaces, and MVP.</p>
+      </div>
+      <div>
+        <h3>March 2025</h3>
+        <p>Mainnet launch, vault upgrades, referral system.</p>
+      </div>
+      <div>
+        <h3>Q2 2025</h3>
+        <p>Ranked vaults, rewards, tournaments.</p>
+      </div>
     </section>
 
     <footer class="footer">
-      © 2025 Robin. All rights reserved. |
-      <a href="#" style="color: #00ff88">Telegram</a> |
-      <a href="#" style="color: #00ff88">LinkedIn</a>
+      <p class="glow">Can you guess it?</p>
+      <a href="#" class="btn">Join Telegram</a>
+      <a href="#" class="btn">Launch App</a>
+      <p style="margin-top: 20px; font-size: 14px; color: #888">
+        &copy; 2025 GUESSIT. All Rights Reserved.
+      </p>
     </footer>
   </body>
 </html>
