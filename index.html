@@ -1,0 +1,177 @@
+new website
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Robin | Graphic Design Portfolio</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background-color: #0b0b0b;
+        color: #f5f5f5;
+      }
+      header,
+      section,
+      footer {
+        padding: 60px 20px;
+        text-align: center;
+      }
+      .hero {
+        background: linear-gradient(145deg, #0b0b0b 60%, #00ff88 90%);
+        color: #fff;
+        padding: 100px 20px;
+      }
+      .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+      }
+      .hero p {
+        font-size: 1.2rem;
+        max-width: 600px;
+        margin: 0 auto 30px;
+      }
+      .button {
+        background-color: #00ff88;
+        color: #0b0b0b;
+        border: none;
+        padding: 15px 30px;
+        margin: 10px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      .section-title {
+        font-size: 2rem;
+        margin-bottom: 40px;
+      }
+      .features,
+      .services,
+      .portfolio {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .card {
+        background-color: #1a1a1a;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid #00ff88;
+      }
+      .timeline {
+        max-width: 800px;
+        margin: 0 auto;
+        border-left: 2px solid #00ff88;
+        padding-left: 20px;
+        text-align: left;
+      }
+      .timeline-entry {
+        margin-bottom: 30px;
+      }
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 20px;
+        border: none;
+        border-radius: 8px;
+      }
+      .footer {
+        background-color: #111;
+        padding: 30px;
+        font-size: 0.9rem;
+        color: #aaa;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <h1>Design the Future. Create the Impact.</h1>
+      <p>
+        Welcome to Robin's graphic design portfolio. From digital branding to
+        futuristic visuals — explore the works that break boundaries.
+      </p>
+      <button class="button">View Work</button>
+      <button class="button">Hire Me</button>
+    </header>
+
+    <section>
+      <h2 class="section-title">Who is Robin?</h2>
+      <p>
+        Robin is a passionate graphic designer with over 1 year of experience in
+        branding, web UI/UX, and crypto-based visuals. Worked with international
+        clients and built design identities that stand out in digital spaces.
+      </p>
+      <button class="button">Download CV</button>
+    </section>
+
+    <section>
+      <h2 class="section-title">Expertise & Tools</h2>
+      <div class="features">
+        <div class="card">Crypto Branding</div>
+        <div class="card">UI/UX Design</div>
+        <div class="card">Creative Direction</div>
+        <div class="card">Logo & Identity</div>
+        <div class="card">Motion Graphics</div>
+        <div class="card">Speed & Quality</div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">My Work</h2>
+      <div class="portfolio">
+        <div class="card">Project 1</div>
+        <div class="card">Project 2</div>
+        <div class="card">Project 3</div>
+        <div class="card">Project 4</div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">What I Offer</h2>
+      <div class="services">
+        <div class="card">
+          Starter Pack<br /><small>Logo + Business Card</small>
+        </div>
+        <div class="card">
+          Pro Branding<br /><small>Full Identity Package</small>
+        </div>
+        <div class="card">
+          Custom UI Kit<br /><small>Web or App Design</small>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Creative Journey</h2>
+      <div class="timeline">
+        <div class="timeline-entry">Jan 2023 – First freelance client</div>
+        <div class="timeline-entry">Jun 2023 – Full-time at design agency</div>
+        <div class="timeline-entry">Dec 2023 – Started crypto branding</div>
+        <div class="timeline-entry">Feb 2024 – Built own design system</div>
+        <div class="timeline-entry">Apr 2025 – Portfolio launch</div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title">Let’s Work Together</h2>
+      <form class="contact-form">
+        <input type="text" placeholder="Name" required />
+        <input type="email" placeholder="Email" required />
+        <textarea rows="5" placeholder="Your message..."></textarea>
+        <button class="button">Send Message</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      © 2025 Robin. All rights reserved. |
+      <a href="#" style="color: #00ff88">Telegram</a> |
+      <a href="#" style="color: #00ff88">LinkedIn</a>
+    </footer>
+  </body>
+</html>
